@@ -1,0 +1,49 @@
+/*
+Title: Climate Action
+Author: Catalina Vrinceanu & Daniel Pincu
+Date: 2024
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ... */
+  
+  body {
+    background-color: #f4fdf4;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  p {
+    
+    padding-bottom: 2em;
+    
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  
+  

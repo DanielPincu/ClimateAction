@@ -11,7 +11,7 @@
 
                 <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold py-2 mt-20 md:py-11 md:mt-32"><?php echo the_title()?></h1>
                 
-                <section id="climate-action" class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12 p-10">
+                <section id="climate-action" class="container mx-auto px-10 grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
     
                     <!-- What is Climate Action -->
                     <div class="col-span-1 lg:col-span-2 lg:flex-col justify-start items-start gap-4 px-4 ">
@@ -27,9 +27,14 @@
    
                     </div>
                     <!-- Image Section -->
-                    <div class="hidden lg:flex lg:col-span-1 items-start justify-end ">
+                    <div class="hidden lg:flex lg:col-span-1 items-start justify-end">
                         <img src="<?php echo esc_url(get_field("goals")["url"]); ?>" alt="Goals Image" class="w-[50%] lg:w-[80%]">
                     </div>
+
+                    <div class="flex md:hidden justify-center">
+                        <img src="<?php echo esc_url(get_field("mobile_goals_image")["url"]); ?>" alt="Goals Image" class="">
+                    </div>
+
                 </section>
                 <?php endwhile; ?>
                     <?php wp_reset_postdata() ?>

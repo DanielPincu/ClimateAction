@@ -1,3 +1,9 @@
-{
+
+    {
+        "intelephense.environment.includePaths": [
+          "/Users/danielpincu/Local Sites/climateaction/app/public/wp-includes",
+          "/Users/danielpincu/Local Sites/climateaction/app/public/wp-admin"
+        ]
+      }
+      
     
-}

@@ -3,21 +3,19 @@ get_header();
 
 // Get the ID of the posts page
 $page_id = get_option('page_for_posts'); 
-
-// Retrieve the ACF field
-$blog_banner = get_field('blog_banner', $page_id); 
 ?>
 
-<div class="relative bg-[#F5F1E8] my-1 py-10">
-<?php if ($blog_banner): // Check if the ACF field returns a value ?>
-        <img
-        class="w-full relative h-[40vh] object-cover"
-        src="<?php echo $blog_banner['url']; ?>" 
+<div class="my-1 py-10 lg:w-[60%] w-full px-10 mx-auto flex justify-center items-center">
+
+    <img
+        class="object-contain"
+        src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : ''; ?>" 
         alt="Blog Banner"
-        />
-    <?php endif; ?>
+    />
+   
 </div>
 <div class="container mx-auto px-4 py-8">
+
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 

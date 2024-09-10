@@ -5,7 +5,7 @@
 
 <!-- banner section -->
 
-        <section class="relative w-full h-screen bg-cover bg-center" style="background-image: url('<?php echo esc_url(get_field("banner")["url"]); ?>');">
+<section class="relative w-full h-screen bg-cover bg-center" style="background-image: url('<?php echo esc_url(get_field("banner")["url"]); ?>');">
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50 p-4 md:p-8 lg:p-12">
         <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4"><?php echo esc_html(get_field("banner_text")); ?></h1>
         <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-8"><?php echo esc_html(get_field("joinus")); ?></p>

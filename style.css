@@ -46,4 +46,218 @@ Date: 2024
 }
 
   
-  
+  /* Pagination styles */
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.pagination a:hover {
+  background-color: #f4f4f4;
+}
+
+.pagination .current {
+  padding: 8px 16px;
+  margin: 0 2px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  display: inline-block;
+}
+
+
+/* Comments pagination styles */
+.comments-pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.comments-pagination a {
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.comments-pagination a:hover {
+  background-color: #f4f4f4;
+}
+
+.comments-pagination .current {
+  padding: 8px 16px;
+  margin: 0 2px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  display: inline-block;
+}
+
+.comment-form {
+margin-top: 10px;
+background-color: #f7f7f7; /* Light grey background */
+padding: 20px;
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.comment-form textarea {
+width: 100%; /* Full width */
+padding: 15px;
+margin-bottom: 10px; /* Space below the textarea */
+border: 1px solid #ccc; /* Light grey border */
+border-radius: 5px; /* Rounded corners */
+font-size: 16px; /* Increase font size */
+box-sizing: border-box;
+height: 150px; /* Fixed height */
+}
+
+.comment-form input[type="submit"] {
+background-color: #68D5C0; /* WordPress blue */
+color: #fff; /* White text */
+padding: 10px 20px;
+border: none; /* Remove default border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer; /* Pointer cursor on hover */
+font-size: 16px; /* Increase font size */
+transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.comment-form input[type="submit"]:hover {
+background-color: #005177; /* Darker blue on hover */
+}
+
+
+#reply-title {
+font-size: 20px;
+}
+
+.comment-reply-link {
+background-color: #68D5C0; /* WordPress blue */
+color: #fff; /* White text */
+padding: 1px 30px;
+border: none; /* Remove default border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer; /* Pointer cursor on hover */
+font-size: 16px; /* Increase font size */
+transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+#cancel-comment-reply-link {
+background-color: #68D5C0; /* WordPress blue */
+color: #fff; /* White text */
+padding: 1px 30px;
+border: none; /* Remove default border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer; /* Pointer cursor on hover */
+font-size: 16px; /* Increase font size */
+transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+
+
+
+p {
+padding-bottom: 1.5em !important;
+padding-top: .5em !important;
+line-height: 1.6 !important;
+color:  !important;
+
+} 
+
+
+
+
+/* General Form Styling */
+.wpcf7-form {
+max-width: 2000px;
+margin: 0 auto;
+padding: 20px;
+background-color: #F1F5F9;
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Field Styling */
+.wpcf7-form p {
+padding: 0;
+}
+
+.wpcf7-form label {
+font-weight: bold;
+margin-bottom: 10px;
+display: block;
+color: #333;
+padding : 0px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form input[type="number"],
+.wpcf7-form select,
+.wpcf7-form textarea {
+width: 100%;
+padding: 5px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+margin-top: 5px;
+}
+
+.wpcf7-form input[type="radio"],
+.wpcf7-form input[type="checkbox"] {
+margin-right: 5px;
+}
+
+.wpcf7-form input::placeholder,
+.wpcf7-form textarea::placeholder {
+color: #888;
+}
+
+/* Button Styling */
+.wpcf7-form input[type="submit"] {
+background-color: #0073aa;
+color: #fff;
+padding: 5px 10px;
+font-size: 18px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+background-color: #005f8d;
+}
+
+/* File Upload Styling */
+.wpcf7-form input[type="file"] {
+border: none;
+padding: 0;
+font-size: 16px;
+color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+.wpcf7-form {
+    padding: 15px;
+}
+
+.wpcf7-form input[type="submit"] {
+    width: 100%;
+}
+}

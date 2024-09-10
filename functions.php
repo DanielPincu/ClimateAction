@@ -7,7 +7,7 @@ add_action("after_setup_theme", "climate_auto_title");
 
 // Disable Gutenberg editor for posts and pages
 function climate_disable_gutenberg() {
-    remove_post_type_support("post", "editor");
+    // remove_post_type_support("post", "editor");
     remove_post_type_support("page", "editor");
 }
 add_action("init", "climate_disable_gutenberg");
@@ -24,3 +24,14 @@ function climate_resources() {
     wp_enqueue_script("climate-js", get_template_directory_uri() . "/js/script.js", array(), false, true);
 }
 add_action("wp_enqueue_scripts", "climate_resources");
+
+
+function my_theme_setup() {
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'my_theme_setup');
+
+function custom_excerpt_length($length) {
+    return 50; // Set this to the number of words you want for the excerpt length
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);

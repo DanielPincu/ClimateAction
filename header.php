@@ -20,9 +20,9 @@
         <!-- Navigation Links -->
         <div class="flex space-x-6">
             <ul class="flex space-x-6">
-                <li><a href="/" class="hover:text-gray-400">Home</a></li>
-                <li><a href="" class="hover:text-gray-400">Blog</a></li>
-                <li><a href="" class="hover:text-gray-400">Contact</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('home')); ?>" class="hover:text-gray-400">Home</a></li>
+                <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="hover:text-gray-400">Blog</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" class="hover:text-gray-400">Contact</a></li>
             </ul>
         </div>
         

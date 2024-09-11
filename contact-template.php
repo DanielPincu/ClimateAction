@@ -8,12 +8,12 @@ get_header(); ?>
         <div class="px-4 py-12 bg-gradient-to-r from-green-300 to-green-100 shadow-lg rounded-lg">
             <!-- Page Title -->
             <h1 class="text-center text-5xl font-bold text-green-800 py-16 leading-tight">
-                Want to Make a Difference? Get Involved Now!
+               <?php echo get_field('heading') ?> 
             </h1>
             
             <!-- Introduction Text -->
             <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-12">
-                Whether you're passionate about reducing carbon emissions, promoting renewable energy, or fighting for environmental justice, we welcome your contributions! Fill out the form below to join the movement for a sustainable future.
+                <?php echo get_field('paragraph') ?>
             </p>
 
             <!-- Contact Form -->

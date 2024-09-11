@@ -35,3 +35,15 @@ function custom_excerpt_length($length) {
     return 50; // Set this to the number of words you want for the excerpt length
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
+
+
+
+function pll_register_strings() {
+
+    pll_register_string('Sustainable Development Goals', 'Home');
+    pll_register_string('Sustainable Development Goals', 'Blog');
+    pll_register_string('Sustainable Development Goals', 'Contact');
+    
+}
+
+add_action('init', 'pll_register_strings');

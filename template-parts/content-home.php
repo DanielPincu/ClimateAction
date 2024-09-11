@@ -4,7 +4,7 @@
     <div class="h-auto p-4 rounded-lg">
         <!-- Image -->
         <div class="flex justify-center mb-4">
-            <img class="w-64 rounded-md shadow-md" src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : ''; ?>" alt="">
+            <a class="" href="<?php the_permalink(); ?>"><img class="w-64 hover:scale-105 rounded-md shadow-md" src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : ''; ?>" alt=""></a>
         </div>
         
         <!-- Title -->

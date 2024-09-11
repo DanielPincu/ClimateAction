@@ -5,10 +5,10 @@ get_header();
 $page_id = get_option('page_for_posts'); 
 ?>
 
-<div class="my-1 py-10 lg:w-[60%] w-full px-10 mx-auto flex justify-center items-center">
+<div class="w-full flex justify-center items-center">
 
     <img
-        class="object-contain"
+        class=""
         src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : ''; ?>" 
         alt="Blog Banner"
     />

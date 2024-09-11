@@ -14,7 +14,8 @@
         <!-- Logo and Site Title -->
         <div class="flex flex-col items-center py-4">
             <a href="/" class="px-5">
-                <img src="<?php echo get_field('logo')['url'] ?>" alt="logo" width="100" height="100" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo" width="100" height="100" class="">
+
             </a>
             
         </div>

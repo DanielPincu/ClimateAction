@@ -35,10 +35,14 @@
 
 
 
- 
+<div class="text-center">
+    <h2 class="text-3xl"><?php pll_e('Wanna stay up to date?') ?></h2>
+    <p class="text-xl"><?php pll_e('Subscribe to Newsletter') ?></p>
+</div>
 
-
-
+<div class="mb-20">
+    <?php echo do_shortcode('[contact-form-7 id="38c95cd" title="Newsletter"]'); ?>
+</div>
 
 
 

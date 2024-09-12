@@ -43,6 +43,8 @@ function pll_register_strings() {
     pll_register_string('Sustainable Development Goals', 'Home');
     pll_register_string('Sustainable Development Goals', 'Blog');
     pll_register_string('Sustainable Development Goals', 'Contact');
+    pll_register_string('Sustainable Development Goals', 'Wanna stay up to date?');
+    pll_register_string('Sustainable Development Goals', 'Subscribe to Newsletter');
     
 }
 

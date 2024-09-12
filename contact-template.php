@@ -17,7 +17,7 @@ get_header(); ?>
             </p>
 
             <!-- Contact Form -->
-            <div class="p-10 ">
+            <div class="">
                 <?php echo do_shortcode('[contact-form-7 id="1b8d233" title="Contact form 1"]'); ?>
             </div>
         </div>

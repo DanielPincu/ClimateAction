@@ -295,3 +295,20 @@ color:  !important;
 .wpcf7-form input[type="checkbox"] + label {
   color: #2E7D32; /* Green for checkbox labels */
 }
+.btn {
+  margin-top: 20px !important;
+  width: 100%; !important;
+  background-color: green !important; 
+  color: white !important;            
+  padding: 10px 20px !important;      
+  border: none !important;            
+  border-radius: 5px !important;      
+  cursor: pointer !important;         
+  font-size: 16px !important;       
+  box-shadow: none !important;        
+  transition: background-color 0.3s ease !important; 
+}
+
+.btn:hover {
+  background-color: #689148 !important;  
+}
